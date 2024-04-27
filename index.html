@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Bookstore</title>
+    <style>
+        /* CSS styles */
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .book {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mr. Bookstore</h1>
+        <button>Home</button>
+        <button name="cart">Cart</button>
+    </div>
+    <div class="book">
+        <h2>Book 1: The Great Gatsby</h2>
+        <img src="book1.jpg" alt="The Great Gatsby">
+        <p>Price: $19.99</p>
+        <p>Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Reviews:</p>
+        <ol>
+            <li>Great book! Highly recommended.</li>
+            <li>Beautifully written.</li>
+        </ol>
+    </div>
+    <div class="book">
+        <h2>Book 2: To Kill a Mockingbird</h2>
+        <img src="book2.jpg" alt="To Kill a Mockingbird">
+        <p>Price: $15.99</p>
+        <p>Summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Reviews:</p>
+        <ol>
+            <li>A classic that everyone should read.</li>
+            <li>Powerful and thought-provoking.</li>
+        </ol>
+    </div>
+    <!-- Add three more books with similar structure -->
+    <div class="footer">
+        <p>Location: 123 Main St, City</p>
+        <p>Contact: info@mrbookstore.com</p>
+    </div>
+    <script>
+        // JavaScript code
+        // Add functionality for the cart button
+        const cartButton = document.querySelector('button[name="cart"]');
+        cartButton.addEventListener('click', () => {
+            alert('Added to cart!');
+        });
+    </script>
+</body>
+</html>
